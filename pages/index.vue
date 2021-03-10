@@ -3,7 +3,7 @@
     <div class="text-center mt-4">
       <h3>Add Books</h3>
     </div>
-    <form action="/action_page.php">
+    <form>
       <div class="d-flex flex-row justify-content-center">
         <div class="bookItems">
           <ul class="list-unstyled">

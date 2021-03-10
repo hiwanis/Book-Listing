@@ -17,7 +17,7 @@
               <label for="no">No</label>
             <li>
               List of Cities:
-              <select name=slist>
+              <select name=stateList>
                 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>

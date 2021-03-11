@@ -7,16 +7,16 @@
       <div class="d-flex flex-row justify-content-center">
         <div class="bookItems">
           <ul class="list-unstyled">
-            <li>Cover Image: <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" /> </li>
-            <li>Name: <input type="text" name="" id="" /> </li>
-            <li>Description: <textarea name="description" id="" cols="30" rows="5"></textarea> </li>
-            <li>Author: <input type="text" name="" id="" /> </li>
-            <li>Avaliability: <input type="radio" name="available" id="yes" value="yes">
+            <li>Cover Image: {{ cname }} <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" /> </li>
+            <li>Name: {{ name }}: <input type="text" name="" id="" /> </li>
+            <li>Description: {{ description }}: <textarea name="description" id="" cols="30" rows="5"></textarea> </li>
+            <li>Author {{ author }}: <input type="text" name="" id="" /> </li>
+            <li>Avaliability: {{avaliability}}: <input type="radio" name="available" id="yes" value="yes">
               <label for="yes">Yes</label>
               <input type="radio" name="available" id="no" value="no">
               <label for="no">No</label>
-            <li>
-              List of Cities:
+            <li>List of Cities:
+              {{lcities}}:
               <select name=stateList>
                 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -64,6 +64,12 @@
     </form>
   </div>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
 
 <style>
 body{

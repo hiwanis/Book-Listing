@@ -38,3 +38,12 @@
         </div>
     </div>
 </template>
+
+<script>
+import addofBooks from '~/components/addofBooks'
+export default {
+    components:{
+        addofBooks
+    }
+}
+</script>

@@ -10,14 +10,14 @@
             <ul class="list-unstyled">
               <li>Cover Image: {{ cname }} <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" /> </li>
               <li>Name: {{ name }} <input type="text" name="" id="" /> </li>
-              <li>Description: {{ description }} <textarea name="description" id="" cols="30" rows="5"></textarea> </li>
+              <li>Description: {{ description }}: <textarea name="description" id="" cols="30" rows="5"></textarea> </li>
               <li>Author {{ author }}: <input type="text" name="" id="" /> </li>
-              <li>Avaliability: {{avaliability}} <input type="radio" name="available" value="yes">
+              <li>Avaliability: {{avaliability}}: <input type="radio" name="available" value="yes">
                 <label for="yes">Yes</label>
                 <input type="radio" name="available" value="no">
                 <label for="no">No</label>
               <li>List of Cities:
-                {{lcities}}
+                {{lcities}}:
                 <select name="stateList">
                   <option value="disable" disabled>---Select the states---</option>
                   <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>

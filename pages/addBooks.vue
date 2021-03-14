@@ -61,6 +61,9 @@
             <div class="col-12 text-center">
               <button class="btn btn-info">Submit</button>
             </div>
+            <div class="link text-center mt-5">
+              <n-link to="/listOfBooks"> Go to the List of Books </n-link>
+            </div>
           </div>
         </div>
       </form>
@@ -83,11 +86,22 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     min-height: 100vh;
+    padding: 30px 0;
 }
 .bookItems li {
   margin: 30px 0;
 }
 .bookItems input, .bookItems textarea {
   outline: none;
+}
+.bookItems input:focus, .bookItems textarea:focus{
+  border: 1px solid #17a2b8;
+}
+.link a{
+  color: #212529;
+  text-decoration: none;
+}
+.link a:hover {
+  color: #17a2b8;
 }
 </style>

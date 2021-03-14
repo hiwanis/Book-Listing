@@ -86,7 +86,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     min-height: 100vh;
-    padding: 30px 0;
+    padding-bottom: 30px;
 }
 .bookItems li {
   margin: 30px 0;

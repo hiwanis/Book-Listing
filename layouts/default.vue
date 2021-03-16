@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nuxt :nuxt-child-key="someKey"/>
+    <Nuxt />
   </div>
 </template>
 

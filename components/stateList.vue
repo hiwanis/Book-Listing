@@ -2,7 +2,7 @@
     <div class="select-state">
         <li>List of Cities:
             <select name="stateList" multiple>
-                <option value="disable" disabled>---Select the states---</option>
+                <option value="disable" class="text-center" disabled>---Select the states---</option>
                 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>

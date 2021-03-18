@@ -1,17 +1,43 @@
 <template>
-  <div class="addBooks">
+  <div id="addBooks">
     <div class="container">
-      <heading/>
+      <div class="text-center mt-4">
+        <h3>Add Books</h3>
+      </div>
       <form>
         <div class="d-flex flex-row justify-content-center">
           <div class="bookItems">
             <ul class="list-unstyled">
-              <coverimg/>
-              <name/>
-              <description/>
-              <author/>
-              <available/>
-              <stateList/>
+              <div class="book-cover">
+                <li>Cover Image: 
+                  <input type="file" 
+                  name="myImage" 
+                  accept="image/x-png,image/gif,image/jpeg" />
+                </li>
+              </div>
+              <div>
+                <li>Name: {{ name }}
+                  <input v-model="name" type="text" /> 
+                </li>
+              </div>
+              <div>
+                <li>Description: {{ description }}
+                  <textarea v-model="description" name="description" id="" cols="30" rows="5"></textarea> 
+                </li>
+              </div>
+              <div>
+                <li >Author : {{ author }} <input v-model="author" type="text" name="" id="" /> </li>
+              </div>
+              <div class="details">
+                <li>Avaliability: {{ detail }}<input type="radio" name="available" value="yes" v-model="detail">
+                  <input type="radio" name="available" value="no" v-model="detail">
+                </li>
+              </div>
+              <div class="select-state">
+                <li>List of Cities: {{ selected }}
+                  <v-select multiple v-model="selected" :options="['Andaman and Nicobar Islands','Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Orissa', 'Pondicherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Tripura', 'Uttranchal', 'Uttar Pradesh', 'West Bengal']" />
+                </li>
+              </div>
             </ul>
             <div class="col-12 text-center">
               <button class="btn btn-info">Submit</button>
@@ -27,16 +53,16 @@
   </template>
 
 <script>
-  import heading from "~/components/heading.vue"
-  import coverimg from "~/components/coverimg.vue"
-  import name from "~/components/name.vue"
-  import description from "~/components/description.vue"
-  import author from "~/components/author.vue"
-  import available from "~/components/available.vue"
-  import stateList from "~/components/stateList.vue"
-export default {
-
-}
+  new Vue({
+    el: 'addBooks',
+    data: {
+      name: '',
+      description: '',
+      author: '',
+      detail: '',
+      selected: '',
+    }
+  })
 </script>
 
 <style>

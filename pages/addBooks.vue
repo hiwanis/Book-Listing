@@ -29,8 +29,8 @@
                 <li >Author : {{ author }} <input v-model="author" type="text" name="" id="" /> </li>
               </div>
               <div class="details">
-                <li>Avaliability: {{ detail }}<input type="radio" name="available" value="yes" v-model="detail">
-                  <input type="radio" name="available" value="no" v-model="detail">
+                <li>Avaliability: {{ detail }}<input type="radio" name="available" value="yes" v-model="detail"> Yes
+                  <input type="radio" name="available" value="no" v-model="detail"> No
                 </li>
               </div>
               <div class="select-state">

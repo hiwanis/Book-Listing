@@ -8,13 +8,13 @@
         <div class="d-flex flex-row justify-content-center">
           <div class="bookItems">
             <ul class="list-unstyled">
-              <div class="book-cover">
+              <!-- <div class="book-cover">
                 <li>Cover Image: 
                   <input type="file" 
                   name="myImage" 
                   accept="image/x-png,image/gif,image/jpeg" />
                 </li>
-              </div>
+              </div> -->
               <div>
                 <li>Name: {{ name }}
                   <input v-model="name" type="text" /> 
@@ -50,19 +50,19 @@
       </form>
     </div>
   </div>
-  </template>
+</template>
 
 <script>
-  new Vue({
-    el: 'addBooks',
-    data: {
-      name: '',
-      description: '',
-      author: '',
-      detail: '',
-      selected: '',
-    }
-  })
+  // new Vue({
+  //   el: 'addBooks',
+  //   data: {
+  //     name: '',
+  //     description: '',
+  //     author: '',
+  //     detail: '',
+  //     selected: '',
+  //   }
+  // })
 </script>
 
 <style>

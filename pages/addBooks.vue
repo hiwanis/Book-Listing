@@ -15,29 +15,19 @@
                   accept="image/x-png,image/gif,image/jpeg" />
                 </li>
               </div> -->
-              <div>
                 <li>Name: {{ name }}
                   <input v-model="name" type="text" /> 
                 </li>
-              </div>
-              <div>
                 <li>Description: {{ description }}
                   <textarea v-model="description" name="description" id="" cols="30" rows="5"></textarea> 
                 </li>
-              </div>
-              <div>
                 <li >Author : {{ author }} <input v-model="author" type="text" name="" id="" /> </li>
-              </div>
-              <div class="details">
                 <li>Avaliability: {{ detail }}<input type="radio" name="available" value="yes" v-model="detail"> Yes
                   <input type="radio" name="available" value="no" v-model="detail"> No
                 </li>
-              </div>
-              <div class="select-state">
                 <li>List of Cities: {{ selected }}
                   <v-select multiple v-model="selected" :options="['Andaman and Nicobar Islands','Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Orissa', 'Pondicherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Tripura', 'Uttranchal', 'Uttar Pradesh', 'West Bengal']" />
                 </li>
-              </div>
             </ul>
             <div class="col-12 text-center">
               <button class="btn btn-info">Submit</button>
@@ -53,7 +43,7 @@
 </template>
 
 <script>
-  // new Vue({
+  // var firstPage= new Vue({
   //   el: 'addBooks',
   //   data: {
   //     name: '',

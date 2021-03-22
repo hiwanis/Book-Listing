@@ -36,8 +36,8 @@ serverMiddleware: [
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    'nuxt-vue-select', {'Andaman and Nicobar Islands': Andaman_and_Nicobar_Islands,'Andhra Pradesh': Andhra_Pradesh, 'Arunachal Pradesh': Arunachal_Pradesh, 'Assam':Assam, 'Bihar':Bihar, 'Chandigarh':Chandigarh, 'Chhattisgarh':Chhattisgarh, 'Dadra and Nagar Haveli':Dadra_and_Nagar_Haveli, 'Daman and Diu':Daman_and_Diu, 'Delhi':Delhi, 'Goa':Goa, 'Gujarat':Gujarat, 'Haryana':Haryana, 'Himachal Pradesh':Himachal_Pradesh, 'Jammu and Kashmir':Jammu_and_Kashmir, 'Jharkhand':Jharkhand, 'Karnataka':Karnataka, 'Kerala':Kerala, 'Lakshadweep':Lakshadweep, 'Madhya Pradesh':Madhya_Pradesh, 'Maharashtra':Maharashtra, 'Manipur':Manipur, 'Meghalaya':Meghalaya, 'Mizoram':Mizoram, 'Nagaland':Nagaland, 'Orissa':Orissa, 'Pondicherry':Pondicherry, 'Punjab':Punjab, 'Rajasthan':Rajasthan, 'Sikkim':Sikkim, 'Tamil Nadu':Tamil_Nadu, 'Tripura':Tripura, 'Uttranchal':Uttranchal, 'Uttar Pradesh':Uttar_Pradesh, 'West Bengal':West_Bengal}
-  ],
+    'nuxt-vue-select'
+],
 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
